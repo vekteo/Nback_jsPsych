@@ -7,8 +7,8 @@ In the task, letters are presented on the screen sequentially. The users' task i
 <h2>N-back levels</h2>
 Depending on the value of the "level" variable, 0-back, 1-back or 2-back will be performed.
 <ul>
- <li><strong>0-back:</strong>The target element is the letter "X".</li>
- <li><strong>1-back:</strong>The target is any letters which were preceeded by the same letter.</li> 
+ <li><strong>0-back:</strong> The target element is the letter "X".</li>
+ <li><strong>1-back:</strong> The target is any letters which were preceeded by the same letter.</li> 
  <li><strong>2-back:</strong> The target is any letters which were preceeded by the same letter 2 trials earlier.</li>
 </ul>
 
