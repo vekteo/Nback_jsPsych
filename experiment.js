@@ -176,6 +176,7 @@ const debriefBlock = {
 };
 
 jsPsych.data.addProperties({subject: subject_id});
+timeline.push({type: "fullscreen", fullscreen_mode: true}, instructions, startPractice, practice, afterPractice, firstBlock, betweenBlockRest, secondBlock, debriefBlock, {type: "fullscreen", fullscreen_mode: false});
 
 /*************** EXPERIMENT START AND DATA UPDATE ***************/
 
