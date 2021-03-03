@@ -26,15 +26,19 @@ if (level == 0) {
   instruction = language.instructions3back
 }
 
-const trialStructure = {
-  type: "html-keyboard-response",
-};
-
-/* define messages */
-
-const welcome = {... trialStructure, stimulus: "<h2>Welcome to the task!</h2><h2>Press any key to begin.</h2>" };    
-const afterPractice = {... trialStructure, stimulus: "<p>Good! The task start now. From now on, you won't receive feedback about your answer.</p><br><p>Press any button to start the task!</p>" };
-const betweenBlockRest = {... trialStructure, stimulus: "<p>Now you can rest a little.</p><br><p>Press any button to continue the task!</p>" };
+const instructions = {
+  type: "instructions",
+  pages: [
+      `<h1>${language.welcomePage.welcome}</h1><br><p>${language.welcomePage.clickNext}</p>`,
+      `<p>${instruction.letter}</p><p>${instruction.yourTask1}</p><p>${instruction.yourTask2}</p><p>${language.generalInstruction.fastAndAccurate}</p>${instruction.image}<p>${language.generalInstruction.clickNext}</p>`
+  ],
+  show_clickable_nav: true,
+  button_label_next: language.button.next,
+  button_label_previous: language.button.previous
+}
+const betweenBlockRest = {... trialStructure, stimulus: `<p>${language.betweenBlocks.rest}</p><p>${language.betweenBlocks.continue}</p>` };
+const startPractice = {... trialStructure, stimulus: `<p>${language.practice.practice}</p><p>${language.practice.startPractice}<p>`}
+const afterPractice = {... trialStructure, stimulus: `<h2>${language.practice.end}</h2><p>${language.task.start}</p><p>${language.task.press}<p>` };
 
 /*create blocks*/
 
