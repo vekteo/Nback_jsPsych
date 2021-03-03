@@ -59,6 +59,7 @@ createBlocks(nbackStimuli.stimuliListFirstBlock, nbackStimuli.stimuliFirstBlock,
 createBlocks(nbackStimuli.stimuliListSecondBlock, nbackStimuli.stimuliSecondBlock, level)
 
 /* define practice feedback trials */
+
 const feedbackCorrect = {
   ... trialStructure,
   stimulus: `<div style="font-size:40px; color: green">${language.feedback.correct}</div>`,
@@ -71,6 +72,7 @@ const feedbackWrong = { ... feedbackCorrect, stimulus: `<div style="font-size:40
 const feedbackNo = { ... feedbackCorrect, stimulus: `<div style="font-size:40px; color: red">${language.feedback.noResponse}</div>` }
 
 /* define task trials */
+
 const fixation = {
   ... trialStructure,
   stimulus: '<div style="font-size:30px;">+</div>',
@@ -110,7 +112,7 @@ const test = {
   },
 }
 
-/* define conditional timeline elements */
+/* define conditional timeline elements for practice */
 
 const feedBackC = {
   timeline: [feedbackCorrect],
@@ -139,7 +141,7 @@ const feedBackN = {
       }
   }
 
-/* define timeline elements */
+/*************** TIMELINE ***************/
  
 const timelineElementStructure = {
     repetitions: 1,
@@ -166,9 +168,8 @@ const debriefBlock = {
 };
 
 
-timeline.push(welcome, instructions, practice, afterPractice, firstBlock, betweenBlockRest, secondBlock, debriefBlock);
+/*************** EXPERIMENT START AND DATA UPDATE ***************/
 
-/* start the experiment */
 jsPsych.init({
   timeline: timeline,
   on_finish: function() {
