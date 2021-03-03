@@ -16,7 +16,7 @@ Depending on the value of the <i>level</i> variable (can be modified in <i>param
 
 <h2>Stimulus presentation parameters</h2>
 <p>Ten, phonologically distint letters are used as stimuli (B, K, Q, T, H, M, N, P, X, R). The letters are presented in a fixed pseudo-random order. Each letter is presented for 500 ms with an interstimulus interval of 1500 ms. Stimuli are presented in two 50-trial blocks (100 trials altogether at each level). In the 0-back version, the target X is presented 20 times. Therefore, the target-ratio is set to 20% at each level (20 target trials vs. 80 non-target trials).In the 1-back, 2-back, and 3-back versions, each letter is presented 10 times, and all of them serves as target 2 times (once in each block). After then end of the task, an output file is saved to the local machine in .csv format.</p>
-<img src="static/images/example.png" />
+<img src="static/images/example.png" width="700px"/>
 
 <h2>Output file</h2>
 <ul>
