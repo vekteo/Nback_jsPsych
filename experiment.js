@@ -171,6 +171,7 @@ const debriefBlock = {
     <p>${language.feedback.rt}${rt}${language.feedback.rt2}</p>
     <p>${language.end.thankYou}</p>`;
   },
+  trial_duration: 3000,
 };
 
 
