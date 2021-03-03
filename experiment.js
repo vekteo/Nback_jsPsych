@@ -50,6 +50,8 @@ if (level === 0) {
     defineOneBack()
 } else if (level === 2) {
     defineTwoBack()
+} else if (level === 3) {
+    defineThreeBack()
 }
 
 createBlocks(nbackStimuli.practiceList, nbackStimuli.stimuliPractice, level)
