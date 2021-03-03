@@ -1,5 +1,6 @@
 function createBlocks(list, stimuli, level){
   for (let i = 0; i < list.length; i++) {
+
     if (level === 0){
       targetStimulus = "X"
     }
@@ -28,7 +29,7 @@ function createBlocks(list, stimuli, level){
       block = 2
     }
 
-    let newElement = { stimulus: "<p class='stimulus'>" + list[i] + "</p>", data: { test_part: 'test', correct_response: correctResponse, block: block, trialNumber: i+1, target: target } }
+    let newElement = { stimulus: "<p class='stimulus'>" + list[i] + "</p>", data: { test_part: 'test', correct_response: correctResponse, block: block, trial_number: i+1, target: target, letter: list[i] } }
     stimuli.push(newElement)
   }
 }
