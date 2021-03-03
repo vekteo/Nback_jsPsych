@@ -156,15 +156,21 @@ const secondBlock = { ... firstBlock, timeline_variables: nbackStimuli.stimuliSe
 const debriefBlock = {
   type: "html-keyboard-response",
   stimulus: function() {
-    let trials = jsPsych.data.get().filter({test_part: 'test'}); 
-    let correct_trials = trials.filter({hit: 1, correct_rejection: 1})
-    let accuracy = Math.round(correct_trials.count() / trials.count() * 100);
+    let trials = jsPsych.data.get().filterCustom(function(trial){
+      return (trial.block === 1 || trial.block === 2) && trial.test_part === "test";
+  }); 
+    let correct_trials = jsPsych.data.get().filterCustom(function(trial){
+      return trial.hit === 1 || trial.correct_rejection === 1;
+  })
+    let accuracy = Math.round(correct_trials.count()/trials.count() * 100);
     let rt = Math.round(correct_trials.select('rt').mean());
 
-    return "<p>You responded correctly on "+accuracy+"% of the trials.</p>"+
-    "<p>Your average response time was "+rt+" ms.</p>"+
-    "<p>Press any key to quit. Thank you!</p>";
-  }
+    return `
+    <h2>${language.end.end}</h2>
+    <p>${language.feedback.accuracy}${accuracy}${language.feedback.accuracy2}</p>
+    <p>${language.feedback.rt}${rt}${language.feedback.rt2}</p>
+    <p>${language.end.thankYou}</p>`;
+  },
 };
 
 
