@@ -182,6 +182,9 @@ timeline.push({type: "fullscreen", fullscreen_mode: true}, instructions, startPr
 
 jsPsych.init({
   timeline: timeline,
+  on_close: function() {
+    jsPsych.data.get().localSave("csv", `NBack_${level}back_output_quitted.csv`);
+  },
   on_finish: function() {
     jsPsych.data.get().localSave("csv", "output.csv");
   }
