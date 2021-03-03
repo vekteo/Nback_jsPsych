@@ -186,6 +186,6 @@ jsPsych.init({
     jsPsych.data.get().localSave("csv", `NBack_${level}back_output_quitted.csv`);
   },
   on_finish: function() {
-    jsPsych.data.get().localSave("csv", "output.csv");
-  }
+    jsPsych.data.get().localSave("csv", `NBack_${level}back_output.csv`);
+  }   
 });
