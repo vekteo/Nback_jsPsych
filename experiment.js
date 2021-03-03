@@ -1,6 +1,11 @@
-/* variables */
+/* 
+Created by Teodora Vekony (vekteo@gmail.com)
+MEMO Team (PI: Dezso Nemeth)
+Lyon Neuroscience Research Center
+Universite Claude Bernard Lyon 1
 
-// TIMING AND RESPONSE KEY SETTINGS, MODIFY HERE IF NEEDED //
+Github:https://github.com/vekteo/Nback_JSPsych
+*/
 
 const trialDuration = 1500;
 const stimulusDuration = 500;
