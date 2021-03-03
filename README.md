@@ -71,7 +71,7 @@ Depending on the value of the <i>level</i> variable (can be modified in <i>param
  <li>stimulus duration: the presentation time of the letters</li>
  <li>feedback duration: the presentation time of feedback during practice</li>
  <li>language: the language of the program; available languages: english (en), hungarian (hu)</li>
-<ul>
+</ul>
 
 <h2>Browser requirements</h2>
 <p>Any browser except Safari and Internet Explorer. Recommended: Chrome</p>
