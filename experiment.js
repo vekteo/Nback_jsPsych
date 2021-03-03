@@ -61,14 +61,14 @@ createBlocks(nbackStimuli.stimuliListSecondBlock, nbackStimuli.stimuliSecondBloc
 /* define practice feedback trials */
 const feedbackCorrect = {
   ... trialStructure,
-  stimulus: '<div style="font-size:40px; color: green">Correct!</div>',
+  stimulus: `<div style="font-size:40px; color: green">${language.feedback.correct}</div>`,
   choices: jsPsych.NO_KEYS,
   trial_duration: feedBackDuration,
   data: {test_part: 'feedback'}
 }
 
-const feedbackWrong = { ... feedbackCorrect, stimulus: '<div style="font-size:40px; color: red">Wrong!</div>' }
-const feedbackNo = { ... feedbackCorrect, stimulus: '<div style="font-size:40px; color: red">You did not respond!</div>' }
+const feedbackWrong = { ... feedbackCorrect, stimulus: `<div style="font-size:40px; color: red">${language.feedback.wrong}</div>` }
+const feedbackNo = { ... feedbackCorrect, stimulus: `<div style="font-size:40px; color: red">${language.feedback.noResponse}</div>` }
 
 /* define task trials */
 const fixation = {
