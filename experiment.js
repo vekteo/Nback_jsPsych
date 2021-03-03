@@ -12,6 +12,19 @@ Github:https://github.com/vekteo/Nback_JSPsych
 let nbackStimuli = {};
 let instruction;
 let timeline = [];
+const buttonToPressForTarget = ["f","j"];
+const trialStructure = { type: "html-keyboard-response" };
+const subject_id = jsPsych.randomization.randomID(15)
+
+if (level == 0) {
+  instruction = language.instructions0back
+} else if (level == 1) {
+  instruction = language.instructions1back
+} else if (level == 2) {
+  instruction = language.instructions2back
+} else if (level == 3) {
+  instruction = language.instructions3back
+}
 
 const trialStructure = {
   type: "html-keyboard-response",
