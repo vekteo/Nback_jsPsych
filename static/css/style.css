@@ -1,9 +1,9 @@
 p {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 img {
-    width: 8rem
+    width: 700px;
 }
 
 body {
@@ -11,5 +11,5 @@ body {
 }
 
 .stimulus {
-    font-size: 40px
+    font-size: 60px
 }
