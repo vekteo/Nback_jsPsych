@@ -7,15 +7,10 @@ Universite Claude Bernard Lyon 1
 Github:https://github.com/vekteo/Nback_JSPsych
 */
 
-const trialDuration = 1500;
-const stimulusDuration = 500;
-const buttonToPressForTarget = ["f","j"];
-const feedBackDuration = 1000;
-let level = 2;
-let nbackStimuli = {};
-let instructions;
+/*************** VARIABLES ***************/
 
-/* create timeline */
+let nbackStimuli = {};
+let instruction;
 let timeline = [];
 
 const trialStructure = {
