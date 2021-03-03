@@ -172,6 +172,7 @@ const debriefBlock = {
     <p>${language.end.thankYou}</p>`;
   },
   trial_duration: 3000,
+  on_finish: function(trial) { statCalculation(trial) }
 };
 
 
