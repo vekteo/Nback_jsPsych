@@ -175,6 +175,7 @@ const debriefBlock = {
   on_finish: function(trial) { statCalculation(trial) }
 };
 
+jsPsych.data.addProperties({subject: subject_id});
 
 /*************** EXPERIMENT START AND DATA UPDATE ***************/
 
