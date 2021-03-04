@@ -26,7 +26,8 @@ Depending on the value of the <i>level</i> variable (can be modified in <i>param
  <li><strong>time_elapsed:</strong> the time elapsed from the start of the program in ms</li>
  <li><strong>internal_code_id:</strong> internal node id of the trial</li>
  <li><strong>subject:</strong> a random 15-element-long subject number</li>
- <li><strong>view_history:</strong> browser events during the task (fullscreenenter, fullscreenexit, blur or focus)</li>
+ <li><strong>browser_events:</strong> browser events during the task (fullscreenenter, fullscreenexit, blur or focus)</li>
+ <li><strong>view_history:</strong> viewing history during the instruction trials</li>
  <li><strong>rt:</strong> the reaction times in ms</li>
  <li><strong>stimulus:</strong> stimulus on the screen in HTML</li>
  <li><strong>key_press:</strong> the JS code of the key pressed</li>
