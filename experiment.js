@@ -182,10 +182,17 @@ timeline.push({type: "fullscreen", fullscreen_mode: true}, instructions, startPr
 
 jsPsych.init({
   timeline: timeline,
+  on_data_update: function() {
+    let interactionData = jsPsych.data.getInteractionData()
+    const interactionDataOfLastTrial = interactionData.filter({'trial': jsPsych.data.get().last(1).values()[0].trial_index}).values();
+    if (interactionDataOfLastTrial) {
+        jsPsych.data.get().last(1).values()[0].browser_events = JSON.stringify(interactionDataOfLastTrial)
+    }
+  },
   on_close: function() {
     jsPsych.data.get().localSave("csv", `NBack_${level}back_output_quitted.csv`);
   },
   on_finish: function() {
     jsPsych.data.get().localSave("csv", `NBack_${level}back_output.csv`);
-  }   
+  }
 });
