@@ -161,7 +161,7 @@ const debriefBlock = {
     let trials = jsPsych.data.get().filterCustom(function(trial){
       return (trial.block === 1 || trial.block === 2) && trial.test_part === "test";
   }); 
-    let correct_trials = jsPsych.data.get().filterCustom(function(trial){
+    let correct_trials = trials.filterCustom(function(trial){
       return trial.hit === 1 || trial.correct_rejection === 1;
   })
     let accuracy = Math.round(correct_trials.count()/trials.count() * 100);
