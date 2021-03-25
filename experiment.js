@@ -192,9 +192,9 @@ jsPsych.init({
     }
   },
   on_close: function() {
-    jsPsych.data.get().localSave("csv", `NBack_${level}back_output_quitted.csv`);
+    jsPsych.data.get().localSave("csv", `NBack_subject_${subjectId}_${level}back_quitted_output.csv`);
   },
   on_finish: function() {
-    jsPsych.data.get().localSave("csv", `NBack_${level}back_output.csv`);
+    jsPsych.data.get().localSave("csv", `NBack_subject_${subjectId}_${level}back_output.csv`);
   }
 });
