@@ -156,6 +156,7 @@ const secondBlock = { ... firstBlock, timeline_variables: nbackStimuli.stimuliSe
 
 const debriefBlock = {
   type: "html-keyboard-response",
+  choices: jsPsych.NO_KEYS,
   stimulus: function() {
     let trials = jsPsych.data.get().filterCustom(function(trial){
       return (trial.block === 1 || trial.block === 2) && trial.test_part === "test";
