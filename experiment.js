@@ -14,7 +14,7 @@ let instruction;
 let timeline = [];
 const buttonToPressForTarget = ["f","j"];
 const trialStructure = { type: "html-keyboard-response" };
-const subject_id = jsPsych.randomization.randomID(15)
+const subjectId = jsPsych.randomization.randomID(15)
 
 if (level == 0) {
   instruction = language.instructions0back
