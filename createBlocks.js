@@ -29,7 +29,7 @@ function createBlocks(list, stimuli, level){
       block = 2
     }
 
-    let newElement = { stimulus: "<p class='stimulus'>" + list[i] + "</p>", data: { test_part: 'test', correct_response: correctResponse, block: block, trial_number: i+1, target: target, letter: list[i] } }
+    let newElement = { stimulus: "<p class='stimulus'>" + list[i] + "</p>", data: { test_part: 'test', level: level, correct_response: correctResponse, block: block, trial_number: i+1, target: target, letter: list[i] } }
     stimuli.push(newElement)
   }
 }

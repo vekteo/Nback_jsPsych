@@ -14,7 +14,7 @@ let instruction;
 let timeline = [];
 const buttonToPressForTarget = ["f","j"];
 const trialStructure = { type: "html-keyboard-response" };
-const subject_id = jsPsych.randomization.randomID(15)
+const subjectId = jsPsych.randomization.randomID(15)
 
 if (level == 0) {
   instruction = language.instructions0back
@@ -36,7 +36,8 @@ const instructions = {
   button_label_next: language.button.next,
   button_label_previous: language.button.previous
 }
-const betweenBlockRest = {... trialStructure, stimulus: `<p>${language.betweenBlocks.rest}</p><p>${language.betweenBlocks.continue}</p>` };
+const betweenBlockRest = {... trialStructure, stimulus: `<p>${language.betweenBlocks.rest}</p><p>${language.betweenBlocks.pressKey}</p>` };
+const ready = {... trialStructure, stimulus: `<p>${language.betweenBlocks.continue}</p>` };
 const startPractice = {... trialStructure, stimulus: `<p>${language.practice.practice}</p><p>${language.practice.startPractice}<p>`}
 const afterPractice = {... trialStructure, stimulus: `<h2>${language.practice.end}</h2><p>${language.task.start}</p><p>${language.task.press}<p>` };
 
@@ -77,7 +78,7 @@ const fixation = {
   ... trialStructure,
   stimulus: '<div style="font-size:30px;">+</div>',
   choices: jsPsych.NO_KEYS,
-  trial_duration: trialDuration,
+  trial_duration: fixationDuration,
   data: {test_part: 'fixation'}
 }
 
@@ -86,8 +87,8 @@ const test = {
   stimulus: jsPsych.timelineVariable('stimulus'),
   choices: buttonToPressForTarget,
   data: jsPsych.timelineVariable('data'),
-  trial_duration: stimulusDuration,
-  stimulus_duration: stimulusDuration,
+  trial_duration: letterDuration,
+  stimulus_duration: letterDuration,
   on_finish: function(data){
     if (data.correct_response == "f" && data.key_press == 70){
         data.correct_rejection = 1;
@@ -155,11 +156,12 @@ const secondBlock = { ... firstBlock, timeline_variables: nbackStimuli.stimuliSe
 
 const debriefBlock = {
   type: "html-keyboard-response",
+  choices: jsPsych.NO_KEYS,
   stimulus: function() {
     let trials = jsPsych.data.get().filterCustom(function(trial){
       return (trial.block === 1 || trial.block === 2) && trial.test_part === "test";
   }); 
-    let correct_trials = jsPsych.data.get().filterCustom(function(trial){
+    let correct_trials = trials.filterCustom(function(trial){
       return trial.hit === 1 || trial.correct_rejection === 1;
   })
     let accuracy = Math.round(correct_trials.count()/trials.count() * 100);
@@ -175,8 +177,8 @@ const debriefBlock = {
   on_finish: function(trial) { statCalculation(trial) }
 };
 
-jsPsych.data.addProperties({subject: subject_id});
-timeline.push({type: "fullscreen", fullscreen_mode: true}, instructions, startPractice, practice, afterPractice, firstBlock, betweenBlockRest, secondBlock, debriefBlock, {type: "fullscreen", fullscreen_mode: false});
+jsPsych.data.addProperties({subject: subjectId});
+timeline.push({type: "fullscreen", fullscreen_mode: true}, instructions, startPractice, practice, afterPractice, firstBlock, betweenBlockRest, ready, secondBlock, debriefBlock, {type: "fullscreen", fullscreen_mode: false});
 
 /*************** EXPERIMENT START AND DATA UPDATE ***************/
 
@@ -190,9 +192,9 @@ jsPsych.init({
     }
   },
   on_close: function() {
-    jsPsych.data.get().localSave("csv", `NBack_${level}back_output_quitted.csv`);
+    jsPsych.data.get().localSave("csv", `NBack_subject_${subjectId}_${level}back_quitted_output.csv`);
   },
   on_finish: function() {
-    jsPsych.data.get().localSave("csv", `NBack_${level}back_output.csv`);
+    jsPsych.data.get().localSave("csv", `NBack_subject_${subjectId}_${level}back_output.csv`);
   }
 });
