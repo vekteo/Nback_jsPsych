@@ -43,7 +43,7 @@ const en = {
     },
     end:  {
         end: "End of the task.",
-        thankYou: "Thank you for participating!",
+        thankYou: "Thank you!",
     },
     button: {
         next: "Next",
@@ -71,30 +71,30 @@ const en = {
 const hu = {
     welcomePage: {
         welcome: "Üdvözlünk!",
-        clickNext: "Kattins a <strong>Tovább</strong> gombra a folytatáshoz!"
+        clickNext: "Kattints a <strong>Tovább</strong> gombra a folytatáshoz!"
     },
     instructions0back: {
-        letter: "Ebben a fealdatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
-        yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, az <strong style='color:red'>X</strong> betűt látod.</strong>",
+        letter: "Ebben a feladatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
+        yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha az <strong style='color:red'>X</strong> betűt látod.</strong>",
         yourTask2: "Amennyiben bármilyen más betűt látsz, nyomd le az<strong>'F' billentyűt</strong>!",
         image: "<img src='static/images/instruction_0back_hu.gif' />"
     },    
     instructions1back: {
-        letter: "Ebben a fealdatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
+        letter: "Ebben a feladatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
         yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha ugyanazt a betűt látod, mint <strong style='color:red'>eggyel</strong> korábban</strong>.",
-        yourTask2: "Amennyiben nem a betűt látod, mint eggyel korábban, nyomd le az <strong>'F' billentyűt</strong>!",
+        yourTask2: "Amennyiben nem azt a betűt látod, mint eggyel korábban, nyomd le az <strong>'F' billentyűt</strong>!",
         image: "<img src='static/images/instruction_1back_hu.gif' />"
     },
     instructions2back: {
-        letter: "Ebben a fealdatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
+        letter: "Ebben a feladatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
         yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha ugyanazt a betűt látod, mint <strong style='color:red'>kettővel</strong> korábban</strong>.",
-        yourTask2: "Amennyiben nem a betűt látod, mint kettővel korábban, nyomd le az <strong>'F' billentyűt</strong>!",
+        yourTask2: "Amennyiben nem azt a betűt látod, mint kettővel korábban, nyomd le az <strong>'F' billentyűt</strong>!",
         image: "<img src='static/images/instruction_2back_hu.gif' />"
     },
     instructions3back: {
         letter: "In this task, <strong>a letter</strong> will appear on the screen, one at a time.",
         yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha ugyanazt a betűt látod, mint <strong style='color:red'>hárommal</strong> korábban</strong>.",
-        yourTask2: "Amennyiben nem a betűt látod, mint hárommal korábban, nyomd le az <strong>'F' billentyűt</strong>!",
+        yourTask2: "Amennyiben nem azt a betűt látod, mint hárommal korábban, nyomd le az <strong>'F' billentyűt</strong>!",
         image: "<img src='static/images/instruction_3back_hu.gif' />"
     },
     generalInstruction: {
@@ -113,7 +113,7 @@ const hu = {
     },
     end:  {
         end: "Vége a feladatnak.",
-        thankYou: "Köszönjük a részvételt!",
+        thankYou: "Köszönjük!",
     },
     button: {
         next: "Tovább",
@@ -183,7 +183,7 @@ const es = {
     },
     end:  {
         end: "Fin de la tarea.",
-        thankYou: "Gracias por haber participado!",
+        thankYou: "Gracias!",
     },
     button: {
         next: "Siguiente",
@@ -253,7 +253,7 @@ const fr = {
     },
     end:  {
         end: "Fin de la tâche.",
-        thankYou: "Merci de votre participation!",
+        thankYou: "Merci!",
     },
     button: {
         next: "Suivant",
@@ -323,7 +323,7 @@ const pt = {
     },
     end:  {
         end: "Fim da tarefa.",
-        thankYou: "Muito obrigado pela sua participação!",
+        thankYou: "Muito obrigado!",
     },
     button: {
         next: "Próximo",
