@@ -1,4 +1,5 @@
 function setArrays (){
+  nbackStimuli = {};
   nbackStimuli.stimuliFirstBlock = [];
   nbackStimuli.stimuliSecondBlock = [];
   nbackStimuli.stimuliPractice = [];

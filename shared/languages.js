@@ -7,25 +7,25 @@ const en = {
         letter: "In this task, <strong>letters</strong> will appear on the screen consecutively.",
         yourTask1: "Your task will be <strong>to press the key 'J' if you see the letter <strong style='color:red'>X</strong> on the screen.</strong>",
         yourTask2: "Otherwise, press the <strong>key 'F'</strong>.</p>",
-        image: "<img src='static/images/instruction_0back_en.gif' />"
+        image: "<img src='../static/images/instruction_0back_en.gif' />"
     },    
     instructions1back: {
         letter: "In this task, <strong>letters</strong> will appear on the screen consecutively.",
         yourTask1: "Your task will be <strong>to press the key 'J' if the letter on the screen is the same as the <strong style='color:red'>previous</strong> one</strong>.",
         yourTask2: "Otherwise, press the <strong>key 'F'</strong>.",
-        image: "<img src='static/images/instruction_1back_en.gif' />"
+        image: "<img src='../static/images/instruction_1back_en.gif' />"
     },
     instructions2back: {
         letter: "In this task, <strong>letters</strong> will appear on the screen consecutively.",
         yourTask1: "Your task will be <strong>to press the key 'J' if the letter on the screen is the same as <strong style='color:red'>two</strong> letters earlier</strong>.",
         yourTask2: "Otherwise, press the <strong>key 'F'</strong>.",
-        image: "<img src='static/images/instruction_2back_en.gif' />"
+        image: "<img src='../static/images/instruction_2back_en.gif' />"
     },
     instructions3back: {
         letter: "In this task, <strong>letters</strong> will appear on the screen consecutively.",
         yourTask1: "Your task will be <strong>to press the key 'J' if the letter on the screen is the same as <strong style='color:red'>three</strong> letters earlier</strong>.",
         yourTask2: "Otherwise, press the <strong>key 'F'</strong>.",
-        image: "<img src='static/images/instruction_3back_en.gif' />"
+        image: "<img src='../static/images/instruction_3back_en.gif' />"
     },
     generalInstruction: {
         fastAndAccurate: "Try to be as fast and as accurate as possible!",
@@ -65,7 +65,17 @@ const en = {
     task: {
         start: "The task start now. From now on, you won't receive any feedback.",
         press: "Press any key to start the task!",
-    }
+    },
+    parameters: {
+        subject: "Subject Number:",
+        session: "Session Number:"
+    },
+    startWarning: {
+        startSubject: "You are about to start the task with<strong> Subject Number ",
+        startSession: "</strong> and <strong>Session Number ",
+        startButton: "Start the task!",
+        goBackButton: "Change the parameters"
+    },
 }
 
 const hu = {
@@ -77,25 +87,25 @@ const hu = {
         letter: "Ebben a feladatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
         yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha az <strong style='color:red'>X</strong> betűt látod.</strong>",
         yourTask2: "Amennyiben bármilyen más betűt látsz, nyomd le az<strong>'F' billentyűt</strong>!",
-        image: "<img src='static/images/instruction_0back_hu.gif' />"
+        image: "<img src='../static/images/instruction_0back_hu.gif' />"
     },    
     instructions1back: {
         letter: "Ebben a feladatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
         yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha ugyanazt a betűt látod, mint <strong style='color:red'>eggyel</strong> korábban</strong>.",
         yourTask2: "Amennyiben nem azt a betűt látod, mint eggyel korábban, nyomd le az <strong>'F' billentyűt</strong>!",
-        image: "<img src='static/images/instruction_1back_hu.gif' />"
+        image: "<img src='../static/images/instruction_1back_hu.gif' />"
     },
     instructions2back: {
         letter: "Ebben a feladatban <strong>betűket</strong> fogsz látni a képernyőn egymás után.",
         yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha ugyanazt a betűt látod, mint <strong style='color:red'>kettővel</strong> korábban</strong>.",
         yourTask2: "Amennyiben nem azt a betűt látod, mint kettővel korábban, nyomd le az <strong>'F' billentyűt</strong>!",
-        image: "<img src='static/images/instruction_2back_hu.gif' />"
+        image: "<img src='../static/images/instruction_2back_hu.gif' />"
     },
     instructions3back: {
         letter: "In this task, <strong>a letter</strong> will appear on the screen, one at a time.",
         yourTask1: "A feladatod az lesz, hogy <strong>lenyomd a 'J' billentyűt, ha ugyanazt a betűt látod, mint <strong style='color:red'>hárommal</strong> korábban</strong>.",
         yourTask2: "Amennyiben nem azt a betűt látod, mint hárommal korábban, nyomd le az <strong>'F' billentyűt</strong>!",
-        image: "<img src='static/images/instruction_3back_hu.gif' />"
+        image: "<img src='../static/images/instruction_3back_hu.gif' />"
     },
     generalInstruction: {
         fastAndAccurate: "Próbálj meg olyan gyors és pontos lenni a feladaton, amennyire csak tudsz!",
@@ -135,7 +145,17 @@ const hu = {
     task: {
         start: "A feladat most kezdődik élesben. Mostantól nem fog visszajelzést kapni arról, hogy helyesen válaszoltál-e.",
         press: "Nyomd meg bármelyik billentyűt a kezdéshez!",
-    }
+    },
+    parameters: {
+        subject: "Vizsgálati személy száma: ",
+        session: "Ülés száma: "
+    },
+    startWarning: {
+        startSubject: "Feladat kezdése <strong> ezzel a vizsgálati személy számmal: ",
+        startSession: "</strong> és <strong>ezzel az ülésszámmal: ",
+        startButton: "Feladat kezdése",
+        goBackButton: "Paraméterek változtatása"
+    },
 }
 
 const es = {
@@ -147,25 +167,25 @@ const es = {
         letter: "En esta tarea, diferentes <strong>letras</strong> aparecerán en la pantalla de forma consecutiva.",
         yourTask1: "Haz clic en la tecla <strong>'J' si ves la letra<strong style='color:red'>X</strong> aparecer en pantalla.</strong>",
         yourTask2: "De lo contrario, haz clic en la tecla <strong>'F'</strong>.</p>",
-        image: "<img src='static/images/instruction_0back_en.gif' />"
+        image: "<img src='../static/images/instruction_0back_en.gif' />"
     },    
     instructions1back: {
         letter: "En esta tarea, diferentes <strong>letras</strong> aparecerán en la pantalla de forma consecutiva.",
         yourTask1: "Haz clic en la tecla <strong>'J' si la letra en pantalla es la que misma letra<strong style='color:red'>anterior</strong> </strong>.",
         yourTask2: "De lo contrario, haz clic en la tecla <strong>'F'</strong>.",
-        image: "<img src='static/images/instruction_1back_en.gif' />"
+        image: "<img src='../static/images/instruction_1back_en.gif' />"
     },
     instructions2back: {
         letter: "En esta tarea, diferentes <strong>letras</strong> aparecerán en la pantalla de forma consecutiva.",
         yourTask1: "Haz clic en la tecla <strong>'J' si la letra en pantalla es la misma que la letra que viste <strong style='color:red'>dos</strong> intentos atrás</strong>.",
         yourTask2: "De lo contrario, haz clic en la tecla <strong>'F'</strong>.",
-        image: "<img src='static/images/instruction_2back_en.gif' />"
+        image: "<img src='../static/images/instruction_2back_en.gif' />"
     },
     instructions3back: {
         letter: "En esta tarea, diferentes <strong>letras</strong> aparecerán en la pantalla de forma consecutiva",
         yourTask1: "Haz clic en la tecla <strong>'J' si la letra en pantalla es la misma que la letra que viste <strong style='color:red'>tres</strong> intentos atrás</strong>..",
         yourTask2: "De lo contrario, haz clic en la tecla <strong>'F'</strong>.",
-        image: "<img src='static/images/instruction_3back_en.gif' />"
+        image: "<img src='../static/images/instruction_3back_en.gif' />"
     },
     generalInstruction: {
         fastAndAccurate: "Intenta responder de la manera más rápida y precisa que puedas!",
@@ -205,7 +225,17 @@ const es = {
     task: {
         start: "La tarea comenzará dentro de poco. A partir de ahora no recibirás ningún comentario en relación a tus respuestas.",
         press: "Haz clic en cualquer tecla para empezar la tarea!",
-    }
+    },
+    parameters: {
+        subject: "Número de asunto: ",
+        session: "Número de sesión: "
+    },
+    startWarning: {
+        startSubject: "Está a punto de iniciar la tarea con <strong>Número de Asunto ",
+        startSession: "</strong> y <strong>Número de Sesión ",
+        startButton: "¡Inicia la tarea!",
+        goBackButton: "Cambiar los parámetros"
+    },
 }
 
 const fr = {
@@ -217,25 +247,25 @@ const fr = {
         letter: "Dans cette tâche, <strong>des lettres</strong> vont apparaître consécutivement sur votre écran.",
         yourTask1: "Votre tâche sera de <strong>presser le bouton 'J' si vous voyez la lettre <strong style='color:red'>X</strong> à lécran.</strong>",
         yourTask2: "Sinon, pressez le bouton <strong>'F'</strong>.</p>",
-        image: "<img src='static/images/instruction_0back_en.gif' />"
+        image: "<img src='../static/images/instruction_0back_en.gif' />"
     },    
     instructions1back: {
         letter: "Dans cette tâche, <strong>des lettres</strong> vont apparaître consécutivement sur votre écran.",
         yourTask1: "Votre tâche sera de <strong>presser le bouton 'J' si la lettre sur l'écran est la même que <strong style='color:red'>la précédente</strong> lettre</strong>.",
         yourTask2: "Sinon, pressez le bouton <strong>'F'</strong>.",
-        image: "<img src='static/images/instruction_1back_en.gif' />"
+        image: "<img src='../static/images/instruction_1back_en.gif' />"
     },
     instructions2back: {
         letter: "Dans cette tâche, <strong>des lettres</strong> vont apparaître consécutivement sur votre écran.",
         yourTask1: "Votre tâche sera de <strong>presser le bouton 'J' si la lettre sur l'écran est la même que <strong style='color:red'>la lettre deux essais</strong> avant</strong>.",
         yourTask2: "Sinon, pressez le bouton <strong>'F'</strong>.",
-        image: "<img src='static/images/instruction_2back_en.gif' />"
+        image: "<img src='../static/images/instruction_2back_en.gif' />"
     },
     instructions3back: {
         letter: "Dans cette tâche, <strong>des lettres</strong> vont apparaître consécutivement sur votre écran.",
         yourTask1: "Votre tâche sera de <strong>presser le bouton 'J' si la lettre sur l'écran est la même que <strong style='color:red'>la lettre trois essais</strong> avant</strong>.",
         yourTask2: "Sinon, pressez le bouton <strong>'F'</strong>.",
-        image: "<img src='static/images/instruction_3back_en.gif' />"
+        image: "<img src='../static/images/instruction_3back_en.gif' />"
     },
     generalInstruction: {
         fastAndAccurate: "Essayez d'être le plus rapide et le plus précis possible!",
@@ -275,7 +305,17 @@ const fr = {
     task: {
         start: "La tâche va commencer maintenant. Désormais, vous ne recevrez plus de retour sur vos réponses.",
         press: "Appuyez sur n'importe quelle touche pour commencez la tâche!",
-    }
+    },
+    parameters: {
+        subject: "Numéro du sujet : ",
+        session: "Numéro de session : "
+    },
+    startWarning: {
+        startSubject: "Vous êtes sur le point de commencer la tâche avec <strong>Numéro de sujet ",
+        startSession: "</strong> et <strong>Numéro de session ",
+        startButton: "Commencez la tâche !",
+        goBackButton: "Modifier les paramètres"
+    },
 }
 
 const pt = {
@@ -287,25 +327,25 @@ const pt = {
         letter: "Nessa tarefa, irão aparecer <strong>letras</strong> consecutivamente na tela.",
         yourTask1: "A sua tarefa consiste em <strong>apertar a tecla 'J' sempre que ver a letra <strong style='color:red'>X</strong> na tela.</strong>",
         yourTask2: "Senão, aperte a <strong>tecla 'F'</strong>.</p>",
-        image: "<img src='static/images/instruction_0back_en.gif' />"
+        image: "<img src='../static/images/instruction_0back_en.gif' />"
     },    
     instructions1back: {
         letter: "Nessa tarefa, irão aparecer <strong>letras</strong> consecutivamente na tela.",
         yourTask1: "A sua tarefa consiste em <strong>apertar a tecla 'J' sempre que a letra na tela for a mesma que a <strong style='color:red'>anterior</strong></strong>.",
         yourTask2: "Senão, aperte a <strong>tecla 'F'</strong>.",
-        image: "<img src='static/images/instruction_1back_en.gif' />"
+        image: "<img src='../static/images/instruction_1back_en.gif' />"
     },
     instructions2back: {
         letter: "Nessa tarefa, irão aparecer <strong>letras</strong> consecutivamente na tela.",
         yourTask1: "A sua tarefa consiste em <strong>apertar a tecla 'J' sempre que a letra na tela for a mesma letra de <strong style='color:red'>duas</strong> rodadas atrás</strong>.",
         yourTask2: "Senão, aperte a <strong>tecla 'F'</strong>.",
-        image: "<img src='static/images/instruction_2back_en.gif' />"
+        image: "<img src='../static/images/instruction_2back_en.gif' />"
     },
     instructions3back: {
         letter: "Nessa tarefa, irão aparecer <strong>letras</strong> consecutivamente na tela..",
         yourTask1: "A sua tarefa consiste em <strong>apertar a tecla 'J' sempre que a letra na tela for a mesma letra de <strong style='color:red'>três</strong> rodadas atrás</strong>.",
         yourTask2: "Senão, aperte a <strong>tecla 'F'</strong>.",
-        image: "<img src='static/images/instruction_3back_en.gif' />"
+        image: "<img src='../static/images/instruction_3back_en.gif' />"
     },
     generalInstruction: {
         fastAndAccurate: "Tente ser o mais rápido e preciso possível!",
@@ -345,5 +385,15 @@ const pt = {
     task: {
         start: "A tarefa começa agora. De agora em diante, você não receberá nenhum feedback.",
         press: "Aperte qualquer tecla para iniciar a tarefa!",
-    }
+    },
+    parameters: {
+        subject: "Assunto número: ",
+        session: "Número da sessão: "
+    },
+    startWarning: {
+        startSubject: "Você está prestes a iniciar a tarefa com<strong> Número do assuntot ",
+        startSession: "</strong> e <strong>Sessão número ",
+        startButton: "Comece a tarefa!",
+        goBackButton: "Alterar os parâmetros"
+    },
 }
