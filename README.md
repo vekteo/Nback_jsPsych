@@ -25,7 +25,7 @@ Depending on the value of the <i>level</i> variable (can be modified in <i>param
  <li><strong>trial_index:</strong> the number of the given trial (all events considered, even instructions, feedbacks!)</li>
  <li><strong>time_elapsed:</strong> the time elapsed from the start of the program in ms</li>
  <li><strong>internal_code_id:</strong> internal node id of the trial</li>
- <li><strong>subject:</strong> A 15-character long random subject ID for offline version, and customized subject number for offline version</li>
+ <li><strong>subject:</strong> A 15-character long random subject ID for the online version, and customized subject number for the offline version</li>
  <li><strong>session:</strong> customized session number (for offline version only)</li>
  <li><strong>browser_events:</strong> browser events during the task (fullscreenenter, fullscreenexit, blur or focus)</li>
  <li><strong>view_history:</strong> viewing history during the instruction trials</li>
