@@ -1,4 +1,6 @@
 # N-back_JS
+
+<i>Created by the MEMO Team of Lyon Neuroscience Research Center (CRNL) (PI: Dezso Nemeth)</i>
  
 <p>A verbal n-back task created with the JSPSych library (<a href="https://link.springer.com/article/10.3758/s13428-014-0458-y">de Leeuw, J. R., 2015</a>).</p>
 
