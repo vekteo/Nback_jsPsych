@@ -31,7 +31,7 @@ function statCalculation (trial) {
     trial.STAT_nr_correct_rejection = correctRejection.count();
     trial.STAT_nr_response = trials.count();
     trial.STAT_nr_no_response = jsPsych.data.get().filterCustom(function(trial){ return ((trial.block === 1 || trial.block === 2) && trial.test_part === "test" && trial.key_press == null) }).count() ;
-    trial.STAT_accuracy = Math.round(correctTrials.count()/trials.count() * 100);
+    trial.STAT_accuracy = ((hit.count()+correctRejection.count())/trials.count()) * 100;
     trial.STAT_rt_mean = Math.round(trials.select('rt').mean());
     trial.STAT_rt_median = Math.round(trials.select('rt').median());
     trial.STAT_hit_rt_mean = Math.round(hit.select('rt').mean());
