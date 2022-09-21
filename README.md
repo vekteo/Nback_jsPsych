@@ -4,6 +4,13 @@
  
 <p>A verbal n-back task (<a href="https://psycnet.apa.org/doiLanding?doi=10.1037/h0043688">Kirchner, W. K., 1954</a>) created with the jsPsych library (<a href="https://link.springer.com/article/10.3758/s13428-014-0458-y">de Leeuw, J. R., 2015</a>).</p>
 
+<h2>Citation</h2>
+If you use the script, please include this citation in your manuscript:
+
+Vékony, T. (2021). N-back ask created with jsPsych (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.7100178
+
+<a href="https://zenodo.org/badge/latestdoi/335255298"><img src="https://zenodo.org/badge/335255298.svg" alt="DOI"></a>
+
 <h2>Structure of the task</h2>
 <p>In the task, letters are presented on the screen consecutively. The users' task is to press the "J" key on the keyboard for the target elements, and the "F" for the non-target elements. The target stimulus differs between the different level of the task. The task begins with written instructions. Before the two blocks, a 10-trial practice is implemented. During the practice, the users receive feedback about their answer ("Correct", "Wrong", "You did not respond"). After the practice, the two 50-trial long blocks begin. Between blocks, a self-paced rest period is inserted. After the end of the second block, the users receive feedback about there overall success rate and reaction time.</p>
 
