@@ -1,4 +1,4 @@
-# Nback_jsPsych
+# Verbal N-back task created with jsPsych
 
 <i>Created by the MEMO Team of Lyon Neuroscience Research Center (CRNL) (PI: Dezso Nemeth)</i>
  
