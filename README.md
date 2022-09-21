@@ -2,7 +2,7 @@
 
 <i>Created by the MEMO Team of Lyon Neuroscience Research Center (CRNL) (PI: Dezso Nemeth)</i>
  
-<p>A verbal n-back task created with the JSPSych library (<a href="https://link.springer.com/article/10.3758/s13428-014-0458-y">de Leeuw, J. R., 2015</a>).</p>
+<p>A verbal n-back task created with the jsPsych library (<a href="https://link.springer.com/article/10.3758/s13428-014-0458-y">de Leeuw, J. R., 2015</a>).</p>
 
 <h2>Structure of the task</h2>
 <p>In the task, letters are presented on the screen consecutively. The users' task is to press the "J" key on the keyboard for the target elements, and the "F" for the non-target elements. The target stimulus differs between the different level of the task. The task begins with written instructions. Before the two blocks, a 10-trial practice is implemented. During the practice, the users receive feedback about their answer ("Correct", "Wrong", "You did not respond"). After the practice, the two 50-trial long blocks begin. Between blocks, a self-paced rest period is inserted. After the end of the second block, the users receive feedback about there overall success rate and reaction time.</p>
@@ -23,7 +23,7 @@ Depending on the value of the <i>level</i> variable (can be modified in <i>param
 <h2>Output file</h2>
 <ul>
  <li><strong>success:</strong> whether fullscreen mode was successfully started/ended (true or false)</li>
- <li><strong>trial_type:</strong> JSPSych trialtype of the given trial (fullscreen, instructions or html-keyboard-response)</li>
+ <li><strong>trial_type:</strong> jsPsych trialtype of the given trial (fullscreen, instructions or html-keyboard-response)</li>
  <li><strong>trial_index:</strong> the number of the given trial (all events considered, even instructions, feedbacks!)</li>
  <li><strong>time_elapsed:</strong> the time elapsed from the start of the program in ms</li>
  <li><strong>internal_code_id:</strong> internal node id of the trial</li>
