@@ -1,4 +1,4 @@
-# N-back_JS
+# Nback_jsPsych
 
 <i>Created by the MEMO Team of Lyon Neuroscience Research Center (CRNL) (PI: Dezso Nemeth)</i>
  
