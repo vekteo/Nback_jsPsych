@@ -7,7 +7,7 @@
 <h2>Citation</h2>
 If you use the script, please include this citation in your manuscript:
 
-Vékony, T. (2021). N-back ask created with jsPsych (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.7100178
+Vékony, T. (2021). Verbal N-back task created with jsPsych (Version 1.0.0) [Computer software]. https://doi.org/10.5281/zenodo.7100178
 
 <a href="https://zenodo.org/badge/latestdoi/335255298"><img src="https://zenodo.org/badge/335255298.svg" alt="DOI"></a>
 
