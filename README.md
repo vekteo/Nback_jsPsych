@@ -1,5 +1,4 @@
-Verbal N-back Task with jsPsych: A Working Memory Measure
-Created by the MEMO Team of Lyon Neuroscience Research Center (CRNL) PI: Dezso Nemeth  
+#Verbal N-back Task with jsPsych: A Working Memory Measure
 
 <p>This repository provides a Verbal N-back task (<a href="https://psycnet.apa.org/doiLanding?doi=10.1037/h0043688">Kirchner, W. K., 1954</a>) implemented using the jsPsych library (<a href="https://link.springer.com/article/10.3758/s13428-014-0458-y">de Leeuw, J. R., 2015</a>). The N-back task is a continuous performance task commonly used to assess working memory capacity.</p>
 
