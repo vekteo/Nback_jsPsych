@@ -1,5 +1,3 @@
-This polished README is structured for clarity, better flow, and uses more professional language, while retaining all the original HTML and information.
-
 Verbal N-back Task with jsPsych: A Working Memory Measure
 Created by the MEMO Team of Lyon Neuroscience Research Center (CRNL) PI: Dezso Nemeth  
 
