@@ -47,10 +47,10 @@
 <p>The task level is controlled by the <b>`level`</b> variable, configurable in <b>`parameters.js`</b>. Available levels are 0-back, 1-back, 2-back, and 3-back.</p>
 
 <ul>
-<li>**0-back:** The target element is the fixed letter "**X**" ($n=\text{X}$).</li>
-<li>**1-back:** The target is any letter that is the same as the letter presented immediately prior ($n=n-1$).</li>
-<li>**2-back:** The target is any letter that is the same as the letter presented **2** trials earlier ($n=n-2$).</li>
-<li>**3-back:** The target is any letter that is the same as the letter presented **3** trials earlier ($n=n-3$).</li>
+<li><b>0-back:</b> The target element is the fixed letter "X" ($n=\text{X}$).</li>
+<li><b>1-back:</b> The target is any letter that is the same as the letter presented immediately prior ($n=n-1$).</li>
+<li><b>2-back:</b> The target is any letter that is the same as the letter presented 2 trials earlier ($n=n-2$).</li>
+<li><b>3-back:</b> The target is any letter that is the same as the letter presented 3 trials earlier ($n=n-3$).</li>
 </ul>
 
 ### Stimulus Parameters
@@ -64,9 +64,10 @@
 | **Total Trials** | 100 trials | **2** blocks of 50 trials per level. |
 | **Target Ratio** | 20% | Maintained across all levels (20 target trials vs. 80 non-target trials). |
 
-<p>For the 0-back version, the fixed target "**X**" appears 20 times. For the 1-back, 2-back, and 3-back versions, each of the 10 letters is presented 10 times, serving as a target twice (once per block).</p>
+<p>For the 0-back version, the fixed target "X" appears 20 times. For the 1-back, 2-back, and 3-back versions, each of the 10 letters is presented 10 times, serving as a target twice (once per block).</p>
 
-<img src="static/images/example.png" width="700px"/> Example for stimulus presentation in the 2-back task.
+<img src="static/images/example.png" width="700px"/> 
+Example for stimulus presentation in the 2-back task.
 
 ---
 
