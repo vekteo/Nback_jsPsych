@@ -32,7 +32,7 @@
 
 <ol>
 <li>Written instructions are displayed at the start.</li>
-<li>A **10-trial practice block** is performed. During practice, immediate feedback ("Correct", "Wrong", "You did not respond") is provided.</li>
+<li>A 10-trial practice block is performed. During practice, immediate feedback ("Correct", "Wrong", "You did not respond") is provided.</li>
 <li>The main task consists of <b>two 50-trial blocks</b> (100 trials total).</li>
 <li>A self-paced rest period is inserted between the two main blocks.</li>
 <li>Upon completion, participants receive debriefing feedback on their overall success rate and reaction time.</li>
@@ -120,11 +120,11 @@
 <p>The following key experimental parameters can be adjusted by modifying the `parameters.js` file:</p>
 
 <ul>
-<li>**`level`**: Sets the N-back difficulty (0, 1, 2, or 3).</li>
-<li>**`trial\_duration`**: Presentation time of the fixation cross.</li>
-<li>**`stimulus\_duration`**: Presentation time of the letters.</li>
-<li>**`feedback\_duration`**: Presentation time of feedback during the practice block.</li>
-<li>**`language`**: Sets the program language (available: `english (en)`, `hungarian (hu)`).</li>
+<li>`level` Sets the N-back difficulty (0, 1, 2, or 3).</li>
+<li>`trial_duration`: Presentation time of the fixation cross.</li>
+<li>`stimulus_duration`: Presentation time of the letters.</li>
+<li>`feedback_duration`: Presentation time of feedback during the practice block.</li>
+<li>`language`: Sets the program language (available: `english (en)`, `hungarian (hu)`).</li>
 </ul>
 
 ---
