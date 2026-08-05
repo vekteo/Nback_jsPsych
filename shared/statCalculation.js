@@ -9,7 +9,7 @@ function statCalculation (trial) {
     if(miss.count() > 0) {
       phit = hit.count()/(miss.count()+hit.count())
     } else {
-      phit = hit.count()-0.5/(miss.count()+hit.count())
+      phit = (hit.count()-0.5)/(miss.count()+hit.count())
     }
 
     if(falseAlarm.count() > 0) {
